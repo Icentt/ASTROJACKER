@@ -1,6 +1,10 @@
+[![Made with AI](https://img.shields.io/badge/Made_with-AI_assistance-blue)](AI-USAGE.md)
+
 # Astrojack
 
 Astrojack is a responsive streetwear storefront and small-team operations dashboard. It follows the supplied dark editorial mockup and includes product browsing, category/type filters, product details, a shopping bag, checkout, customer order lookup, FAQ, size chart, charity information, inventory controls, and order fulfillment status.
+
+This project used GitHub Copilot for design refinement, code review, and debugging support. AI assistance was used to improve visual polish and validate implementation choices, but the core storefront structure and product logic were kept under direct developer control. See [AI-USAGE.md](AI-USAGE.md).
 
 ## Run
 
