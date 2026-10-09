@@ -16,19 +16,19 @@ Tool: GitHub Copilot
 What I asked for: "Improve the website make it more look good"
 What it gave back: A darker, higher-contrast direction with cleaner spacing and a more editorial feel.
 What I kept, what I changed, and why: I kept the overall direction because the mockup is a dark editorial storefront. I adjusted the palette and spacing so it fit the mockup instead of a generic dark theme. [CONFIRM: name one real value you changed in style.css]
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 2026-10-09 - Hero, product cards and navigation polish
 Tool: GitHub Copilot
 What I asked for: "Make it more good improve the design"
 What it gave back: Refinement suggestions for the hero section, product cards and navigation.
 What I kept, what I changed, and why: I kept the stronger hero composition and removed some effects because the page felt crowded. [CONFIRM: say which effects]
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 2026-10-09 - Premium editorial streetwear look
 Tool: GitHub Copilot
 What I asked for: "Give me a more premium editorial streetwear look"
 What it gave back: A darker palette, glow accents, card shadows and hover states.
 What I kept, what I changed, and why: I kept the darker mood and hover states, and toned down the red accents so they mark prices, stock flags and active filters without competing with the content. [CONFIRM]
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 2026-10-09 - Structure and styling review
 Tool: GitHub Copilot
 What I asked for: "Review the current storefront structure and styling and tell me what to improve"
@@ -45,7 +45,7 @@ Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
 Tool: GitHub Copilot
 What I asked for: "Check whether the JavaScript still parses after the styling changes"
 What it gave back: Run node --check script.js.
-What I kept, what I changed, and why: I ran it and it passed, and I recorded the command in .github/copilot-instructions.md so it is repeatable. It only checks syntax, so I also clicked through the customer and admin flows. [CONFIRM you did this]
+What I kept, what I changed, and why: I ran it and it passed, and I recorded the command in .github/copilot-instructions.md so it is repeatable. It only checks syntax, so I also clicked through the customer and admin flows. [[CONFIRM you did this]](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
 YYYY-MM-DD - [CONFIRM: add a real seventh entry only if it happened]
 Tool:
