@@ -42,7 +42,13 @@ function logo() {
 }
 
 function header() {
-  return `<header class="store-header"><button class="logo-button" data-page="home" aria-label="Astrojack home">${logo()}</button><nav class="main-nav" aria-label="Main navigation"><button data-page="home">Home</button><button data-page="shop">Shop</button><button data-page="faq">FAQ</button><button data-page="size">Size chart</button><button data-page="charity">Charity</button><button data-page="admin">Admin</button></nav><div class="header-tools"><button class="icon-button" data-page="account" aria-label="Account" title="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg></button><form class="header-search" id="search-form"><input name="query" aria-label="Search products" placeholder="Search" value="${escapeHtml(state.query)}"><button class="icon-button" aria-label="Submit search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button></form><button class="icon-button cart-trigger" data-page="cart" aria-label="Cart, ${cartCount()} items" title="Cart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 002 1.6h8.9a2 2 0 001.9-1.4L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span>${cartCount()}</span></button><button class="menu-toggle" data-action="menu" aria-label="Open menu">☰</button></div></header>`;
+  const pages = ['home', 'shop', 'faq', 'size', 'charity', 'admin'];
+  const navItems = pages.map(page => {
+    const labels = { home: 'Home', shop: 'Shop', faq: 'FAQ', size: 'Size chart', charity: 'Charity', admin: 'Admin' };
+    return `<button class="${state.page === page ? 'active' : ''}" data-page="${page}">${labels[page]}</button>`;
+  }).join('');
+
+  return `<header class="store-header"><button class="logo-button" data-page="home" aria-label="Astrojack home">${logo()}</button><nav class="main-nav" aria-label="Main navigation">${navItems}</nav><div class="header-tools"><button class="icon-button" data-page="account" aria-label="Account" title="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg></button><form class="header-search" id="search-form"><input name="query" aria-label="Search products" placeholder="Search" value="${escapeHtml(state.query)}"><button class="icon-button" aria-label="Submit search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button></form><button class="icon-button cart-trigger" data-page="cart" aria-label="Cart, ${cartCount()} items" title="Cart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 002 1.6h8.9a2 2 0 001.9-1.4L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span>${cartCount()}</span></button><button class="menu-toggle" data-action="menu" aria-label="Open menu">☰</button></div></header>`;
 }
 
 function productCard(product) {
