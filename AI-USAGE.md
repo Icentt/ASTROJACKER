@@ -40,13 +40,13 @@ Tool: GitHub Copilot
 What I asked for: "Open the site in the browser and debug the launch issue"
 What it gave back: A shell command to launch the page, then advice to open the file directly.
 What I kept, what I changed, and why: The command failed (see Section 2, Case 1), so I kept only the advice and opened index.html by hand. The app has no build step, so this is enough.
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 2026-10-09 - Syntax check after the styling pass
 Tool: GitHub Copilot
 What I asked for: "Check whether the JavaScript still parses after the styling changes"
 What it gave back: Run node --check script.js.
 What I kept, what I changed, and why: I ran it and it passed, and I recorded the command in .github/copilot-instructions.md so it is repeatable. It only checks syntax, so I also clicked through the customer and admin flows. [[CONFIRM you did this]](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 YYYY-MM-DD - [CONFIRM: add a real seventh entry only if it happened]
 Tool:
 What I asked for:
@@ -61,7 +61,7 @@ Case 1 - Launch command that did not work
 What it gave me: A PowerShell command to open the page in the browser.
 What was wrong with it: It failed in my environment, so following it blindly would have left me unable to test.
 What I did instead: Opened index.html directly in the browser and checked that it rendered.
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/d56c96b](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 Case 2 - [CONFIRM: pick a real mistake and rename this]
 
 Candidates that exist in script.js (use one only if the AI really produced it): order.id, item.size and product.image are put into template strings without escapeHtml (and item.size also goes inside data-size="..."); the Admin page has no login; checkout copies every form field into the order with ...values.
@@ -69,7 +69,7 @@ Candidates that exist in script.js (use one only if the AI really produced it): 
 What it gave me:
 What was wrong with it:
 What I did instead: (best: fix it yourself in a new commit and link that commit)
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/SHA
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/SHA](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 Case 3 - [CONFIRM: pick a second real mistake and rename this]
 
 Candidates: order IDs built from the last 7 digits of Date.now() can collide; stock is one number per product shared across sizes, so one size can oversell; in the quantity action item?.quantity + delta is NaN if the line is missing.
@@ -77,7 +77,7 @@ Candidates: order IDs built from the last 7 digits of Date.now() can collide; st
 What it gave me:
 What was wrong with it:
 What I did instead:
-Commit: https://github.com/YOUR-USERNAME/ASTROJACK/commit/SHA
+Commit: [https://github.com/YOUR-USERNAME/ASTROJACK/commit/SHA](https://github.com/Icentt/ASTROJACKER/commit/1d325a48efa07446f21d4dd160602d2ed25e013f)
 3. Who wrote what
 
 At least a fifth of this project is code you wrote yourself. Name it, and explain it in your own words.
