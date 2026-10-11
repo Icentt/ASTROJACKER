@@ -78,6 +78,8 @@ test('serves live catalogue and protects operations routes', async () => {
   const products = await (await request('/api/products')).json();
   assert.equal(products.length, 8);
   assert.equal(products[0].colors[0], 'Black');
+  assert.equal(products[0].category, 'Men');
+  assert.equal(products[0].type, 'Sweatshirts');
   assert.equal((await request('/api/admin/dashboard')).status, 401);
 });
 
@@ -133,6 +135,8 @@ test('authenticates admin and persists inventory and order operations', async ()
   const dashboard = await (await request('/api/admin/dashboard', { headers: { Cookie: cookie } })).json();
   assert.equal(dashboard.stats.orders, 1);
   assert.equal(dashboard.products.find(product => product.id === 'orbit-hoodie').stock, 3);
+  assert.equal(dashboard.products.find(product => product.id === 'orbit-hoodie').category, 'Men');
+  assert.equal(dashboard.products.find(product => product.id === 'orbit-hoodie').type, 'Sweatshirts');
 
   const logout = await request('/api/admin/logout', { method: 'POST', headers: { ...origin, Cookie: cookie } });
   assert.equal(logout.status, 200);

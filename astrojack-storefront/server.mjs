@@ -47,14 +47,14 @@ database.exec(`
 `);
 
 const catalog = [
-  { id: 'orbit-hoodie', name: 'Orbit Heavyweight Hoodie', price: 2490, stock: 8, colors: ['Black', 'Heather Gray', 'Forest Green'], sizes: ['S', 'M', 'L', 'XL'] },
-  { id: 'signal-tee', name: 'Signal Graphic Tee', price: 990, stock: 14, colors: ['Black', 'White', 'Red'], sizes: ['S', 'M', 'L', 'XL'] },
-  { id: 'night-runner', name: 'Night Runner Shell', price: 3290, stock: 5, colors: ['Black', 'Olive', 'Stone'], sizes: ['XS', 'S', 'M', 'L'] },
-  { id: 'city-cap', name: 'City Circuit Cap', price: 790, stock: 12, colors: ['Black', 'Navy', 'Khaki'], sizes: ['One size'] },
-  { id: 'static-crew', name: 'Static Crewneck', price: 2190, stock: 2, colors: ['Charcoal', 'Oatmeal', 'Burgundy'], sizes: ['S', 'M', 'L', 'XL'] },
-  { id: 'sidewalk-low', name: 'Sidewalk Low Top', price: 2890, stock: 6, colors: ['Black', 'White', 'Red'], sizes: ['36', '37', '38', '39', '40'] },
-  { id: 'afterhours-tee', name: 'Afterhours Long Sleeve', price: 1390, stock: 9, colors: ['Black', 'White', 'Charcoal'], sizes: ['S', 'M', 'L', 'XL'] },
-  { id: 'orbit-tote', name: 'Orbit Utility Tote', price: 590, stock: 0, colors: ['Natural', 'Black'], sizes: ['One size'] }
+  { id: 'orbit-hoodie', name: 'Orbit Heavyweight Hoodie', category: 'Men', type: 'Sweatshirts', price: 2490, stock: 8, colors: ['Black', 'Heather Gray', 'Forest Green'], sizes: ['S', 'M', 'L', 'XL'] },
+  { id: 'signal-tee', name: 'Signal Graphic Tee', category: 'Men', type: 'T-Shirts', price: 990, stock: 14, colors: ['Black', 'White', 'Red'], sizes: ['S', 'M', 'L', 'XL'] },
+  { id: 'night-runner', name: 'Night Runner Shell', category: 'Women', type: 'Outerwear', price: 3290, stock: 5, colors: ['Black', 'Olive', 'Stone'], sizes: ['XS', 'S', 'M', 'L'] },
+  { id: 'city-cap', name: 'City Circuit Cap', category: 'Kids', type: 'Accessories', price: 790, stock: 12, colors: ['Black', 'Navy', 'Khaki'], sizes: ['One size'] },
+  { id: 'static-crew', name: 'Static Crewneck', category: 'Women', type: 'Sweatshirts', price: 2190, stock: 2, colors: ['Charcoal', 'Oatmeal', 'Burgundy'], sizes: ['S', 'M', 'L', 'XL'] },
+  { id: 'sidewalk-low', name: 'Sidewalk Low Top', category: 'Kids', type: 'Shoes', price: 2890, stock: 6, colors: ['Black', 'White', 'Red'], sizes: ['36', '37', '38', '39', '40'] },
+  { id: 'afterhours-tee', name: 'Afterhours Long Sleeve', category: 'Men', type: 'T-Shirts', price: 1390, stock: 9, colors: ['Black', 'White', 'Charcoal'], sizes: ['S', 'M', 'L', 'XL'] },
+  { id: 'orbit-tote', name: 'Orbit Utility Tote', category: 'Women', type: 'Accessories', price: 590, stock: 0, colors: ['Natural', 'Black'], sizes: ['One size'] }
 ];
 
 const mimeTypes = {

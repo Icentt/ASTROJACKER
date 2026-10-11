@@ -303,9 +303,9 @@ app.addEventListener('click', event => {
     render();
     return;
   }
-  const colorButton = event.target.closest('[data-color]');
+  const colorButton = event.target.closest('.color-option[data-color]');
   if (colorButton) { state.color = colorButton.dataset.color; render(); return; }
-  const sizeButton = event.target.closest('[data-size]');
+  const sizeButton = event.target.closest('.size-option[data-size]');
   if (sizeButton) { state.size = sizeButton.dataset.size; render(); return; }
   const actionButton = event.target.closest('[data-action]');
   if (!actionButton) return;
@@ -337,7 +337,16 @@ app.addEventListener('click', event => {
     else notify('Quantity exceeds available stock.');
     save(); render(); return;
   }
-  if (actionButton.dataset.action === 'remove') { state.cart = state.cart.filter(item => !(item.productId === actionButton.dataset.id && item.size === actionButton.dataset.size && (item.color || productById(item.productId)?.colors[0]) === actionButton.dataset.color)); save(); render(); }
+  if (actionButton.dataset.action === 'remove') {
+    state.cart = state.cart.filter(item => !(
+      item.productId === actionButton.dataset.id
+      && item.size === actionButton.dataset.size
+      && (item.color || productById(item.productId)?.colors[0]) === actionButton.dataset.color
+    ));
+    save();
+    render();
+    return;
+  }
   if (actionButton.dataset.action === 'menu') {
     const nav = document.querySelector('.main-nav');
     const isOpen = nav?.classList.toggle('open') || false;
